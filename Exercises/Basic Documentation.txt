@@ -1,0 +1,137 @@
+ Explicación del Uso de Estructuras de Control en JavaScript
+
+ - `if`: Se utiliza para tomar decisiones basadas en condiciones. 
+   Ejecuta un bloque de código si una condición es verdadera y opcionalmente otros bloques si la condición es falsa.
+- `for`: Se utiliza para repetir un bloque de código un número fijo de veces. 
+   Es útil cuando conoces el número exacto de iteraciones.
+- `while`: Se utiliza para repetir un bloque de código mientras una condición sea verdadera.
+   Es útil cuando no sabes de antemano cuántas veces se repetirá el bloque de código.
+- `switch`: Se utiliza para seleccionar una de muchas opciones basadas en el valor de una expresión. 
+   Es una alternativa más limpia a múltiples `if...else if...else`.
+
+ 1. Estructura `if`
+
+La estructura `if` se utiliza para ejecutar un bloque de código solo si una condición específica es verdadera. Es una de las estructuras de control de flujo más básicas y comunes.
+
+Sintaxis:
+
+javascript
+if (condición) {
+    // Código a ejecutar si la condición es verdadera
+} else if (otraCondición) {
+    // Código a ejecutar si la otra condición es verdadera
+} else {
+    // Código a ejecutar si ninguna de las condiciones anteriores es verdadera
+}
+
+
+Ejemplo:
+
+javascript
+let edad = 20;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+
+
+ 2. Estructura `for`
+
+El ciclo `for` se utiliza para repetir un bloque de código un número determinado de veces. Es útil cuando sabes de antemano cuántas veces quieres ejecutar un bloque de código.
+
+Sintaxis:
+
+javascript
+for (inicialización; condición; actualización) {
+    // Código a ejecutar en cada iteración
+}
+
+
+Ejemplo:
+
+javascript
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+
+ 3. Estructura `while`
+
+El ciclo `while` se utiliza para repetir un bloque de código mientras una condición específica sea verdadera. Es útil cuando no sabes de antemano cuántas veces necesitas repetir el bloque de código.
+
+Sintaxis:
+
+javascript
+while (condición) {
+    // Código a ejecutar mientras la condición sea verdadera
+}
+
+
+Ejemplo:
+
+javascript
+let i = 1;
+
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+
+ 4. Estructura `switch`
+
+La estructura `switch` se utiliza para ejecutar diferentes bloques de código basados en el valor de una expresión. Es una alternativa al uso de múltiples declaraciones `if...else if...else`.
+
+Sintaxis:
+
+javascript
+switch (expresión) {
+    case valor1:
+        // Código a ejecutar si la expresión es igual a valor1
+        break;
+    case valor2:
+        // Código a ejecutar si la expresión es igual a valor2
+        break;
+    // Más casos si es necesario
+    default:
+        // Código a ejecutar si ninguno de los casos anteriores coincide
+}
+
+
+Ejemplo:
+
+javascript
+let dia = 3;
+let diaNombre;
+
+switch (dia) {
+    case 1:
+        diaNombre = "Lunes";
+        break;
+    case 2:
+        diaNombre = "Martes";
+        break;
+    case 3:
+        diaNombre = "Miércoles";
+        break;
+    case 4:
+        diaNombre = "Jueves";
+        break;
+    case 5:
+        diaNombre = "Viernes";
+        break;
+    case 6:
+        diaNombre = "Sábado";
+        break;
+    case 7:
+        diaNombre = "Domingo";
+        break;
+    default:
+        diaNombre = "Día no válido";
+}
+
+console.log("Hoy es: " + diaNombre);
+
+
