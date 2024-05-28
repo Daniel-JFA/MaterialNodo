@@ -1,0 +1,193 @@
+Documentación sobre el Uso del Ciclo `switch` en JavaScript
+
+El ciclo `switch` es una estructura de control de flujo que permite ejecutar diferentes 
+bloques de código basados en el valor de una expresión. Es una alternativa más clara y organizada 
+a múltiples declaraciones `if...else if...else`. A continuación, se presenta una documentación 
+detallada sobre el ciclo `switch`, incluyendo su sintaxis, explicación de sus componentes y varios ejemplos de uso.
+
+El ciclo `switch` es una herramienta útil en JavaScript para manejar múltiples condiciones de una manera 
+organizada y clara. A diferencia de las estructuras `if...else if...else`, el `switch` 
+proporciona una sintaxis más limpia y puede mejorar la legibilidad del código cuando se manejan múltiples 
+condiciones discretas. Comprender cómo y cuándo usar `switch` te permitirá escribir código más efectivo y 
+mantenible. 
+
+Sintaxis del Ciclo `switch`
+
+
+switch (expresión) {
+    case valor1:
+        // Código a ejecutar si expresión === valor1
+        break;
+    case valor2:
+        // Código a ejecutar si expresión === valor2
+        break;
+    // Más casos si es necesario
+    default:
+        // Código a ejecutar si ningún caso coincide
+}
+
+
+- expresión: La expresión cuyo valor se compara con los valores de cada caso.
+- case valor: Un valor contra el cual se compara la expresión.
+- break: Termina la ejecución del ciclo `switch` si se encuentra una coincidencia.
+- default: Opcional. Se ejecuta si ningún caso coincide con el valor de la expresión.
+
+Componentes del Ciclo `switch`
+
+1. Expresión: La expresión que se evalúa y se compara con los valores de cada caso.
+   
+   switch (expresión) {
+       // Casos y código aquí
+   }
+   
+
+2. Casos (`case`): Cada caso compara el valor de la expresión con un valor específico.
+   
+   case valor1:
+       // Código a ejecutar si expresión === valor1
+       break;
+   
+
+3. Declaración `break`: Termina la ejecución del `switch` y evita que se ejecuten otros casos.
+   
+   break;
+   
+
+4. Caso por Defecto (`default`): Se ejecuta si ningún caso coincide con el valor de la expresión.
+   
+   default:
+       // Código a ejecutar si ningún caso coincide
+   
+
+Ejemplo Básico
+
+Un ciclo `switch` que determina el día de la semana basado en un número:
+
+
+let dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Hoy es lunes");
+        break;
+    case 2:
+        console.log("Hoy es martes");
+        break;
+    case 3:
+        console.log("Hoy es miércoles");
+        break;
+    case 4:
+        console.log("Hoy es jueves");
+        break;
+    case 5:
+        console.log("Hoy es viernes");
+        break;
+    case 6:
+        console.log("Hoy es sábado");
+        break;
+    case 7:
+        console.log("Hoy es domingo");
+        break;
+    default:
+        console.log("Número de día inválido");
+}
+
+
+Explicación:
+- Expresión: `dia` – La expresión cuyo valor se compara con cada caso.
+- Casos (`case`): Cada caso verifica si `dia` es igual a un valor específico (1, 2, 3, etc.).
+- Declaración `break`: Termina la ejecución del `switch` si se encuentra una coincidencia.
+- Caso por Defecto (`default`): Se ejecuta si `dia` no coincide con ningún caso.
+
+Ejemplo con `default`
+
+Un ciclo `switch` que verifica el nivel de acceso basado en un rol de usuario:
+
+
+let rol = "admin";
+
+switch (rol) {
+    case "admin":
+        console.log("Acceso total");
+        break;
+    case "editor":
+        console.log("Acceso a contenido de edición");
+        break;
+    case "viewer":
+        console.log("Acceso de solo lectura");
+        break;
+    default:
+        console.log("Rol no reconocido");
+}
+
+
+Explicación:
+- Expresión: `rol` – La expresión cuyo valor se compara con cada caso.
+- Casos (`case`): Cada caso verifica si `rol` es igual a un valor específico ("admin", "editor", "viewer").
+- Caso por Defecto (`default`): Se ejecuta si `rol` no coincide con ningún caso.
+
+Ejemplo de Agrupación de Casos
+
+Un ciclo `switch` que agrupa varios casos para manejar múltiples condiciones con el mismo código:
+
+
+let fruta = "Manzana";
+
+switch (fruta) {
+    case "Manzana":
+    case "Pera":
+    case "Plátano":
+        console.log("Esta es una fruta común");
+        break;
+    case "Mango":
+    case "Papaya":
+        console.log("Esta es una fruta tropical");
+        break;
+    default:
+        console.log("Fruta desconocida");
+}
+
+
+Explicación:
+- Casos Agrupados: `case "Manzana": case "Pera": case "Plátano":` – Ejecuta el mismo bloque de código si `fruta` es "Manzana", "Pera" o "Plátano".
+- Caso por Defecto (`default`): Se ejecuta si `fruta` no coincide con ningún caso.
+
+Ejemplo de Uso Complejo
+
+Un ciclo `switch` que maneja diferentes operaciones matemáticas basadas en una entrada de usuario:
+
+
+const prompt = require('prompt-sync')({sigint: true}); // Para Node.js, utilizar el módulo 'prompt-sync'
+
+let operacion = prompt("Ingresa la operación (suma, resta, multiplica, divide): ");
+let num1 = parseFloat(prompt("Ingresa el primer número: "));
+let num2 = parseFloat(prompt("Ingresa el segundo número: "));
+
+switch (operacion) {
+    case "suma":
+        console.log("Resultado: " + (num1 + num2));
+        break;
+    case "resta":
+        console.log("Resultado: " + (num1 - num2));
+        break;
+    case "multiplica":
+        console.log("Resultado: " + (num1 * num2));
+        break;
+    case "divide":
+        if (num2 !== 0) {
+            console.log("Resultado: " + (num1 / num2));
+        } else {
+            console.log("Error: División por cero");
+        }
+        break;
+    default:
+        console.log("Operación no reconocida");
+}
+
+
+Explicación:
+- Expresión: `operacion` – La operación ingresada por el usuario.
+- Casos (`case`): Cada caso verifica si `operacion` es igual a un valor específico ("suma", "resta", "multiplica", "divide").
+- Condición Adicional: Verifica si `num2` no es cero antes de realizar la división.
+- Caso por Defecto (`default`): Se ejecuta si `operacion` no coincide con ningún caso.
+

@@ -1,0 +1,135 @@
+Documentación sobre el Uso del Ciclo `while` en JavaScript
+
+El ciclo `while` es una estructura de control de flujo que permite repetir un bloque de código 
+mientras una condición específica sea verdadera. Es especialmente útil cuando no se sabe de antemano 
+cuántas veces se debe ejecutar el bloque de código, y se basa en la evaluación continua de la condición.
+
+El ciclo `while` es una herramienta flexible y poderosa en JavaScript para manejar iteraciones 
+basadas en condiciones. A diferencia del ciclo `for`, el ciclo `while` es más adecuado cuando 
+no se conoce de antemano cuántas veces se debe ejecutar el bloque de código.
+Comprender cómo y cuándo usar `while` te permitirá escribir programas más dinámicos y adaptables.
+
+ Sintaxis del Ciclo `while`
+
+
+while (condición) {
+    // Código a ejecutar mientras la condición sea verdadera
+}
+
+
+- Condición: Una expresión que se evalúa como `true` o `false` antes de cada iteración del bucle. Si la condición es `true`, se ejecuta el bloque de código. Si es `false`, el bucle termina.
+- Bloque de Código: Un conjunto de declaraciones que se ejecutarán mientras la condición sea verdadera.
+
+Ejemplo Básico
+
+Un ciclo `while` que imprime los números del 1 al 5:
+
+
+let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+
+Explicación:
+- Condición: `i <= 5` – Se evalúa si `i` es menor o igual a 5.
+- Bloque de Código: `console.log(i);` – Imprime el valor de `i`.
+- Actualización: `i++` – Incrementa el valor de `i` en 1 al final de cada iteración.
+
+Ejemplo con Entrada de Usuario
+
+Un ciclo `while` que pide al usuario que ingrese un número hasta que ingrese un número mayor a 10:
+
+
+const prompt = require('prompt-sync')({sigint: true}); // Para Node.js, utilizar el módulo 'prompt-sync'
+
+let numero;
+
+while (true) {
+    numero = parseInt(prompt("Ingresa un número mayor a 10: "));
+    if (numero > 10) {
+        break;
+    }
+    console.log("El número no es mayor a 10. Inténtalo de nuevo.");
+}
+
+console.log("Número ingresado: " + numero);
+
+
+Explicación:
+- Condición: `true` – El bucle se ejecutará indefinidamente hasta que se encuentre un `break`.
+- Entrada de Usuario: `prompt` – Pide al usuario que ingrese un número.
+- Condición Interna: `if (numero > 10)` – Si el número es mayor a 10, el bucle se rompe con `break`.
+- Mensaje: Informa al usuario que el número no es válido y pide un nuevo número.
+
+Ejemplo de Contador con Condición
+
+Un ciclo `while` que cuenta cuántas veces se lanza un dado hasta obtener un 6:
+
+
+let contador = 0;
+let dado;
+
+while (dado !== 6) {
+    dado = Math.floor(Math.random() * 6) + 1;
+    console.log("Lanzaste un " + dado);
+    contador++;
+}
+
+console.log("Se necesitaron " + contador + " lanzamientos para obtener un 6.");
+
+
+Explicación:
+- Condición: `dado !== 6` – El bucle se ejecutará mientras `dado` no sea igual a 6.
+- Lanzamiento de Dado: `Math.floor(Math.random() * 6) + 1` – Genera un número aleatorio entre 1 y 6.
+- Actualización: `contador++` – Incrementa el contador de lanzamientos.
+
+Ejemplo con Condiciones Compuestas
+
+Un ciclo `while` que pide al usuario que ingrese un número par:
+
+
+let numero;
+
+while (true) {
+    numero = parseInt(prompt("Ingresa un número par: "));
+    if (numero % 2 === 0) {
+        break;
+    }
+    console.log("El número no es par. Inténtalo de nuevo.");
+}
+
+console.log("Número ingresado: " + numero);
+
+
+Explicación:
+- Condición: `true` – El bucle se ejecutará indefinidamente hasta que se encuentre un `break`.
+- Condición Interna: `if (numero % 2 === 0)` – Si el número es par, el bucle se rompe con `break`.
+- Mensaje: Informa al usuario que el número no es válido y pide un nuevo número.
+
+Ejemplo de Ciclo Infinito Controlado
+
+Un ciclo `while` que continúa ejecutándose hasta que el usuario decida salir:
+
+
+let seguir = true;
+
+while (seguir) {
+    let respuesta = prompt("¿Deseas continuar? (s/n): ");
+    if (respuesta.toLowerCase() !== 's') {
+        seguir = false;
+    } else {
+        console.log("Continuando...");
+    }
+}
+
+console.log("Has salido del bucle.");
+
+
+Explicación:
+- Condición: `seguir` – El bucle se ejecutará mientras `seguir` sea `true`.
+- Entrada de Usuario: `prompt` – Pide al usuario que ingrese una respuesta.
+- Condición Interna: `if (respuesta.toLowerCase() !== 's')` – Si la respuesta no es 's', se establece `seguir` a `false` para romper el bucle.
+- Mensaje: Informa al usuario sobre el estado del bucle.

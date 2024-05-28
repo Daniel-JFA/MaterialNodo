@@ -1,0 +1,163 @@
+Documentación sobre el Uso del Ciclo `if` en JavaScript
+
+El ciclo `if` es una estructura de control fundamental en la programación que permite ejecutar un bloque 
+de código solo si una condición específica se cumple. 
+Es una herramienta esencial para la toma de decisiones en los programas. 
+A continuación, se presenta una documentación detallada sobre el ciclo `if`, incluyendo su sintaxis,
+explicación de sus componentes y varios ejemplos de uso.
+
+El ciclo `if` es una estructura de control esencial en la programación que permite tomar decisiones 
+basadas en condiciones. Su capacidad para manejar múltiples condiciones a través de `else if` y `else` 
+lo hace extremadamente flexible y poderoso. 
+Comprender cómo y cuándo usar `if` te permitirá escribir código más dinámico y adaptable. 
+
+
+Sintaxis del Ciclo `if`
+
+
+if (condición) {
+    // Código a ejecutar si la condición es verdadera
+}
+
+
+Extensiones del Ciclo `if`
+
+El ciclo `if` puede extenderse utilizando `else` y `else if` para manejar múltiples condiciones:
+
+
+if (condición1) {
+    // Código a ejecutar si condición1 es verdadera
+} else if (condición2) {
+    // Código a ejecutar si condición2 es verdadera
+} else {
+    // Código a ejecutar si ninguna de las condiciones anteriores es verdadera
+}
+
+
+Componentes del Ciclo `if`
+
+1. Condición: Una expresión que se evalúa como `true` o `false`.
+   
+   if (a > b) {
+       // Código a ejecutar si a es mayor que b
+   }
+   
+
+2. Bloque de Código: Un conjunto de declaraciones que se ejecutarán si la condición es verdadera.
+   
+   if (a > b) {
+       console.log("a es mayor que b");
+   }
+   
+
+Ejemplo Básico
+
+Un ejemplo sencillo que determina si un número es positivo:
+
+
+let numero = 5;
+
+if (numero > 0) {
+    console.log("El número es positivo");
+}
+
+
+Explicación:
+- Condición: `numero > 0` – Se evalúa si `numero` es mayor que 0.
+- Bloque de Código: `console.log("El número es positivo");` – Se ejecuta si la condición es verdadera.
+
+Ejemplo con `else`
+
+Un ejemplo que determina si un número es positivo o negativo:
+
+
+let numero = -3;
+
+if (numero > 0) {
+    console.log("El número es positivo");
+} else {
+    console.log("El número es negativo o cero");
+}
+
+
+Explicación:
+- Condición: `numero > 0` – Se evalúa si `numero` es mayor que 0.
+- Bloque de Código `if`: `console.log("El número es positivo");` – Se ejecuta si la condición es verdadera.
+- Bloque de Código `else`: `console.log("El número es negativo o cero");` – Se ejecuta si la condición es falsa.
+
+Ejemplo con `else if`
+
+Un ejemplo que determina si un número es positivo, negativo o cero:
+
+
+let numero = 0;
+
+if (numero > 0) {
+    console.log("El número es positivo");
+} else if (numero < 0) {
+    console.log("El número es negativo");
+} else {
+    console.log("El número es cero");
+}
+
+
+Explicación:
+- Condición `if`: `numero > 0` – Se evalúa si `numero` es mayor que 0.
+- Bloque de Código `if`: `console.log("El número es positivo");` – Se ejecuta si la condición es verdadera.
+- Condición `else if`: `numero < 0` – Se evalúa si `numero` es menor que 0.
+- Bloque de Código `else if`: `console.log("El número es negativo");` – Se ejecuta si la condición es verdadera.
+- Bloque de Código `else`: `console.log("El número es cero");` – Se ejecuta si ninguna de las condiciones anteriores es verdadera.
+
+Ejemplo con Múltiples `else if`
+
+Un ejemplo que determina el día de la semana basado en un número:
+
+
+let dia = 3;
+
+if (dia == 1) {
+    console.log("Hoy es lunes");
+} else if (dia == 2) {
+    console.log("Hoy es martes");
+} else if (dia == 3) {
+    console.log("Hoy es miércoles");
+} else if (dia == 4) {
+    console.log("Hoy es jueves");
+} else if (dia == 5) {
+    console.log("Hoy es viernes");
+} else if (dia == 6) {
+    console.log("Hoy es sábado");
+} else if (dia == 7) {
+    console.log("Hoy es domingo");
+} else {
+    console.log("Número de día inválido");
+}
+
+
+Explicación:
+- Condición `if`: `dia == 1` – Se evalúa si `dia` es igual a 1.
+- Bloque de Código `if`: `console.log("Hoy es lunes");` – Se ejecuta si la condición es verdadera.
+- Condición `else if`: `dia == 2` – Se evalúa si `dia` es igual a 2.
+- Bloque de Código `else if`: `console.log("Hoy es martes");` – Se ejecuta si la condición es verdadera.
+- Y así sucesivamente para los demás días de la semana.
+- Bloque de Código `else`: `console.log("Número de día inválido");` – Se ejecuta si ninguna de las condiciones anteriores es verdadera.
+
+Ejemplo con Condiciones Compuestas
+
+Un ejemplo que determina si un año es bisiesto:
+
+
+let año = 2024;
+
+if ((año % 4 == 0 && año % 100 != 0) || año % 400 == 0) {
+    console.log("El año es bisiesto");
+} else {
+    console.log("El año no es bisiesto");
+}
+
+
+Explicación:
+- Condición `if`: `((año % 4 == 0 && año % 100 != 0) || año % 400 == 0)` – Se evalúa si el año es divisible por 4 y no es divisible por 100, o si es divisible por 400.
+- Bloque de Código `if`: `console.log("El año es bisiesto");` – Se ejecuta si la condición es verdadera.
+- Bloque de Código `else`: `console.log("El año no es bisiesto");` – Se ejecuta si la condición es falsa.
+
