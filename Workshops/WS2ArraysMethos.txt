@@ -1,0 +1,51 @@
+ A continuación, se presenta una lista de las funciones más comunes y útiles para recorrer arreglos:
+ Utilice cada uno de ellos con un ejemplo.
+
+ 1. `forEach()`
+Recorre cada elemento del array y ejecuta una función para cada uno de ellos.
+
+ 2. `map()`
+Crea un nuevo array con los resultados de aplicar una función a cada elemento del array original.
+
+ 3. `filter()`
+Crea un nuevo array con todos los elementos que pasen una prueba (implementada por una función).
+
+ 4. `reduce()`
+Aplica una función a un acumulador y a cada elemento del array (de izquierda a derecha) para reducirlo a un solo valor.
+
+ 5. `reduceRight()`
+Aplica una función a un acumulador y a cada elemento del array (de derecha a izquierda) para reducirlo a un solo valor.
+
+ 6. `some()`
+Prueba si al menos un elemento en el array pasa la prueba implementada por la función proporcionada.
+
+ 7. `every()`
+Prueba si todos los elementos en el array pasan la prueba implementada por la función proporcionada.
+
+ 8. `find()`
+Devuelve el primer elemento del array que satisface la prueba implementada por la función proporcionada.
+
+ 9. `findIndex()`
+Devuelve el índice del primer elemento del array que satisface la prueba implementada por la función proporcionada. Si no se encuentra, devuelve -1.
+
+ 10. `keys()`
+Devuelve un nuevo objeto Array Iterator que contiene las claves para cada índice en el array.
+
+ 11. `values()`
+Devuelve un nuevo objeto Array Iterator que contiene los valores para cada índice en el array.
+
+ 12. `entries()`
+Devuelve un nuevo objeto Array Iterator que contiene pares clave/valor para cada índice en el array.
+
+ 13. `for...of`
+Un bucle que permite recorrer los elementos de un array (y otros objetos iterables).
+
+ 14. `for...in`
+Un bucle que permite recorrer las claves (índices) de un array (aunque es más adecuado para objetos).
+
+ 15. `flat()`
+Devuelve un nuevo array con todos los elementos de sub-array concatenados en él de forma recursiva hasta la profundidad especificada.
+
+Estas funciones permiten realizar diversas operaciones en los arrays, 
+desde recorrerlos y aplicar funciones a cada elemento, hasta transformarlos y filtrarlos según diferentes criterios.
+Utilizar estas funciones puede hacer que tu código sea más claro, conciso y eficiente.
