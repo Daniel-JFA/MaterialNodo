@@ -26,6 +26,8 @@ function multiplo(){
     }
 }
 
+// comentario js
+
 multiplo();
     
 
