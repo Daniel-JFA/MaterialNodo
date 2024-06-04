@@ -82,6 +82,26 @@ function TextPalindromo(text) {
 console.log(TextPalindromo("asa"));
 console.log("----------------------------------------------------");
 
+function TextPalindromo(text) {
+  // Normalizamos el texto para eliminar espacios y caracteres especiales, y convertir todo a minúsculas.
+  let normalizedText = text.toLowerCase().replace(/[\W_]/g, "");
+  // Invertimos la cadena normalizada.
+  let reversedText = normalizedText.split("").reverse().join("");
+  // Comparamos la cadena original con la invertida.
+  if (normalizedText === reversedText) {
+    return `${text} es un palíndromo`;
+  } else {
+    return `${text} no es un palíndromo`;
+  }
+}
+
+// Ejemplos de prueba
+console.log(TextPalindromo("asa")); // asa es un palíndromo
+console.log(TextPalindromo("A man, a plan, a canal, Panama")); // A man, a plan, a canal, Panama es un palíndromo
+console.log(TextPalindromo("hello")); // hello no es un palíndromo
+
+console.log("----------------------------------------------------");
+
 // Ejercicio 6: Encontrar el Máximo en un Array
 // Descripción: Escribe una función que tome un array de números y devuelva el número máximo.
 
@@ -180,5 +200,12 @@ console.log("----------------------------------------------------");
 // Ejercicio 9: Encontrar Números Primos
 // Descripción: Escribe una función que encuentre todos los números primos hasta un número dado.
 
+// function numPrimo() {
+//   let numero = 100;
+//   for (let i = 0; i < 100; i++) {
+//     if (numero % 100 === 0) {
+//     }
+//   }
+// }
 // Ejercicio 10: Generar una Secuencia Fibonacci
 // Descripción: Escribe una función que genere una secuencia Fibonacci hasta un número dado.
