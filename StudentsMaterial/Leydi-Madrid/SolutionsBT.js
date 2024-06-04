@@ -200,12 +200,12 @@ console.log("----------------------------------------------------");
 // Ejercicio 9: Encontrar Números Primos
 // Descripción: Escribe una función que encuentre todos los números primos hasta un número dado.
 
-function numPrimo() {
-  let numero = 100;
-  for (let i = 0; i < 100; i++) {
-    if (numero % 100 === 0) {
-    }
-  }
-}
+// function numPrimo() {
+//   let numero = 100;
+//   for (let i = 0; i < 100; i++) {
+//     if (numero % 100 === 0) {
+//     }
+//   }
+// }
 // Ejercicio 10: Generar una Secuencia Fibonacci
 // Descripción: Escribe una función que genere una secuencia Fibonacci hasta un número dado.
