@@ -1,5 +1,5 @@
 // Esta guía está diseñada para ayudar a principiantes a fortalecer sus habilidades de pensamiento lógico y comprensión de los conceptos básicos de programación.
-
+//Hola Profe
 // Ejercicio 1: Suma de Dos Números
 // Descripción: Escribe una función que tome dos números como argumentos y devuelva su suma.
 
