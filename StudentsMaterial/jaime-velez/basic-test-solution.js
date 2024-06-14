@@ -112,7 +112,7 @@ function revertString(string) {
 // Ejercicio 8: Contar Vocales en una Cadena
 // Descripción: Escribe una función que tome una cadena de texto y cuente el número de vocales (a, e, i, o, u).
 function countVocals(string) {
-    let vocals = {'a':1,'e':1,'i':1,'o':1,'u':1};
+    let vocals = {a,e,i,o,u};
     let total = 0;
     for(let character of string) {
         if(vocals[character])
@@ -152,6 +152,18 @@ function primeNumbers(limit) {
 // Ejercicio 10: Generar una Secuencia Fibonacci
 // Descripción: Escribe una función que genere una secuencia Fibonacci hasta un número dado.
 
-function fibonacci(limit) {
+function fibonacci(number) {
     //recursion mi viejo nemesis, lo dejo pendiente para el proximo commit
+    if (number <= 1) {
+        return number;
+    }
+    return fibonacci(number - 1) + fibonacci(number - 2);
 }
+
+function printFibonacciSequence(limit) {
+    for(let i = 0; i < limit;i++) {
+        console.log( fibonacci(i));
+    }
+}
+
+console.log(printFibonacciSequence(8));
