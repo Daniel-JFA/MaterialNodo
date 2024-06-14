@@ -4,7 +4,7 @@
 // `if`, `for`, `while`, y `switch`.
 // Este taller te proporcionará una práctica variada y profunda en el uso de estructuras de control en JavaScript.
 // Trabaja a través de cada conjunto de ejercicios y asegúrate de entender cómo funcionan y cuándo usar cada estructura. ¡Buena suerte!
-
+//Voy a empezar a realizar este ejercicio (Esto es un ensayo)
 // Ejercicios con `if`
 
 // 1. Ejercicio 1: Número Positivo, Negativo o Cero
