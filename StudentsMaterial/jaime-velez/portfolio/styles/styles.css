@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #23263a;
+  color: #ffffff;
+}
+
+#navbar {
+  background-color: #212336;
+}
+
+
+#social-media {
+  display: flex;
+  & li {
+    margin-inline: 0 1em;
+  }
+
+  & i {
+    color: #ff4a57;
+  }
+}
+
+#scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2em;
+  top: 40%;
+}
+
+@media (width <= 768px) {
+  #scroll-indicator {
+    right: 0.5em;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #f00;
+}
+
+.card {
+  height: 15em;
+  background-color: #2e2e42;
+}
+
+.page-footer {
+  background-color: #212336;
+}
+
+.service-icons {
+  color: #ff4a57;
+  margin-bottom: 1em;
+}
+
+
+.gallery-projects {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  max-height: 60vh;
+  aspect-ratio: 1/1;
+  & .project-card {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  & figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    & figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      z-index: 2;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  & img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  & figure[data-grid="project-1"] {
+    grid-area: 1 / 1 / 7 / 7;
+  }
+  & figure[data-grid="project-2"] {
+    grid-area: 1 / 7 / 4 / 10;
+  }
+  & figure[data-grid="project-3"] {
+    grid-area: 4 / 7 / 7 / 10;
+  }
+  & figure[data-grid="project-4"] {
+    grid-area: 7 / 7 / 10 / 10;
+  }
+  & figure[data-grid="project-5"] {
+    grid-area: 7 / 4 / 10 / 7;
+  }
+  & figure[data-grid="project-6"] {
+    grid-area: 7 / 1 / 10 / 4;
+  }
+}
+
+.portfolio-section {
+  height: auto;
+}
+
+
+
+
