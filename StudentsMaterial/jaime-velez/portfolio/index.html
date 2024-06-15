@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaime CV</title>
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- scroll indicator -->
+    <div id="scroll-indicator">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!--nav-->
+    <nav id="navbar">
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- HOME -->
+      <section id="home" class="portfolio-section row">
+        <div class="row">
+          <div class="col s12 m6">
+            <h1>Hi, I'm Jaime</h1>
+            <h3 id="title-animation"></h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nemo
+              sapiente quaerat assumenda maxime non qui eveniet autem officia sed
+              tempore maiores eos, dolorum impedit consequuntur quam mollitia facere
+              adipisci?
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <img src="./assets/images/profile.png" alt="Jaime's photo" >
+          </div>
+        </div>
+        
+      </section>
+      <!-- SERVICES -->
+      <section id="services" class="portfolio-section row">
+        <h4>Services</h4>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content white-text">
+                <i class="fa-solid fa-laptop-code fa-2x service-icons"></i>
+                <span class="card-title">Web Development</span>
+                <p>
+                  Basic knowledge of HTML, CSS, and JavaScript. Understanding of front-end frameworks like React, Angular, or Vue.js
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content white-text">
+                <i class="fa-solid fa-gears fa-2x service-icons"></i>
+                <span class="card-title">Problem-Solving Skills</span>
+                <p>
+                  Ability to debug code and solve technical problems effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content white-text">
+                <i class="fa-solid fa-database fa-2x service-icons"></i>
+                <span class="card-title">Database Knowledge</span>
+                <p>
+                  Familiarity with basic database concepts and SQL.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content white-text">
+                <i class="fa-solid fa-code-branch fa-2x service-icons"></i>
+                <span class="card-title">Version Control Systems</span>
+                <p>
+                  Experience with Git/GitHub for managing codebase changes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content white-text">
+                <i class="fa-solid fa-file fa-2x service-icons"></i>
+                <span class="card-title">Documentation</span>
+                <p>
+                  Ability to write clear and concise documentation for code and projects.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content white-text">
+                <i class="fa-solid fa-users fa-2x service-icons service-icons"></i>
+                <span class="card-title">Soft Skills</span>
+                <p>
+                  Good communication skills, teamwork, and collaborate effectively  in a team.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section id="projects" class="portfolio-section row">
+        <h3>Projects</h3>
+        <div class="gallery-projects">
+          <figure class="project-card" data-grid="project-1">
+            <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="good dog" />
+            <figcaption>
+              <p>Project 1</p>
+              <a href="https://example.com/project-1">GitHub link</a>
+            </figcaption>
+          </figure>
+          <figure class="project-card" data-grid="project-2">
+            <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="good dog" />
+            <figcaption>
+              <p>Project 2</p>
+              <a href="https://example.com/project-2">GitHub link</a>
+            </figcaption>
+          </figure>
+          <figure class="project-card" data-grid="project-3">
+            <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="good dog" />
+            <figcaption>
+              <p>Project 3</p>
+              <a href="https://example.com/project-3">GitHub link</a>
+            </figcaption>
+          </figure>
+          <figure class="project-card" data-grid="project-4">
+            <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="good dog" />
+            <figcaption>
+              <p>Project 4</p>
+              <a href="https://example.com/project-4">GitHub link</a>
+            </figcaption>
+          </figure>
+          <figure class="project-card" data-grid="project-5">
+            <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="good dog" />
+            <figcaption>
+              <p>Project 5</p>
+              <a href="https://example.com/project-5">GitHub link</a>
+            </figcaption>
+          </figure>
+          <figure class="project-card" data-grid="project-6">
+            <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="good dog" />
+            <figcaption>
+              <p>Project 6</p>
+              <a href="https://example.com/project-6">GitHub link</a>
+            </figcaption>
+          </figure>
+          
+        </div>
+      </section>
+      
+      <!-- CONTACT FORM -->
+      <section id="contact-form" class="portfolio-section row">
+        <h3>Contact me</h3>
+        <div class="row">
+          <div class="col s12 m6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem! Odit, perferendis hic sit voluptas non, voluptate, itaque error repudiandae similique doloremque ipsa culpa tempore ut consequuntur! Sequi, porro obcaecati.</p>
+          </div>
+          <div class="col s12 m6">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field outlined col s12 m6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field outlined col s12 m12">
+                  <textarea id="textarea1" class="materialize-textarea validate" data-length="120"></textarea>
+                  <label for="textarea1">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Information</h5>
+            <p class="grey-text text-lighten-4">
+              Email: Jandres.vr92@gmail.com
+              <br>
+              City: Medellin - Colombia
+              <br>
+              Phone: +57 3053540475
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Social</h5>
+            <ul id="social-media">
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-linkedin fa-2x"></i></li>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-github fa-2x"></i></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-discord fa-2x"></i></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="./script/index.js"></script>
+    
+  </body>
+</html>
