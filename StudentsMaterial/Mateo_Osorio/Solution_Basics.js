@@ -9,10 +9,10 @@ function fizzbuzz(){
 console.log(i+"FizzBuzz")
     }
     else if (i%3==0){
-        console.log(i+"Fizz")
+        console.log(i+"Buzz")
     }
     else if (i%5==0){
-        console.log(i+"Buzz")
+        console.log(i+"Fizz")
     }
 }
 }

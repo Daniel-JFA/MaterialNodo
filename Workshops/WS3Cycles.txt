@@ -35,6 +35,8 @@ Ejercicios con `while`
 1. Ejercicio 1: Contar hasta que se Ingrese un Número Mayor a 10
    - Descripción: Escribe un programa que continúe pidiendo al usuario que ingrese un número hasta que el número ingresado sea mayor a 10.
 
+
+
 2. Ejercicio 2: Adivinar un Número
    - Descripción: Escribe un programa que elija un número aleatorio entre 1 y 100, y luego continúe pidiendo al usuario que adivine el número hasta que lo adivine correctamente.
 
