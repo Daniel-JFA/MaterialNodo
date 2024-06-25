@@ -191,3 +191,4 @@ Solucion....
 //for(numero = 1; numero < clothing.length; numero++){
   // console.log("el numero es "+clothing[numero]);
 //}
+//Test
