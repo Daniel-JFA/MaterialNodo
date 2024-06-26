@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <nav>
+      <nav class="nav-contenido">
         <ul>
           <li>Inicio</li>
           <li>Sobre mí</li>
@@ -19,19 +19,23 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h2>Hola 🖖 Soy Leydi</h2>
-          <h1>Diseñadora UI & Desarrolladora Front-end</h1>
-          <p>
-            Transformo ideas en interfaces atractivas y funcionales, combinando
-            creatividad y tecnología
-          </p>
-          <button>Ver mi trabajo</button>
-        </div>
-        <img src="" alt="" />
+        <section class="banner">
+          <div class="banner__informacion">
+            <h2 class="banner__titulo-principal">Hola 🖖 Soy Leydi</h2>
+            <h1 class="banner__titulo-secundario">
+              Diseñadora UI & Desarrolladora Front-end
+            </h1>
+            <p class="banner__parrafo">
+              Transformo ideas en interfaces atractivas y funcionales,
+              combinando creatividad y tecnologías
+            </p>
+            <button>Ver mi trabajo</button>
+          </div>
+          <img src="./assets/imagen-pixar.jpg" alt="" />
+        </section>
       </header>
-      <section>
-        <div>
+      <section class="acerca">
+        <div class="acerca__informacion">
           <p>
             ¡Hola! Soy Leydi Madrid, una apasionada Diseñadora UI y
             Desarrolladora Front-end. Durante los últimos 2 años he tenido el
@@ -43,55 +47,46 @@
             manera eficiente.
           </p>
         </div>
-        <div><h2>Habilidades técnicas</h2></div>
         <div>
+          <h2>Habilidades técnicas</h2>
           <ul>
             <li>Diseño UI: Figma, Prototipado, Diseño responsivo</li>
             <li>Frontend: HTML5, CSS3, JavaScript, React JS, Tailwind CSS</li>
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h2>Proyecto 1: Sitio web La Finca de Todos</h2>
-            <p>
-              Diseño completo de la interfaz gráfica y desarrollo front-end para
-              sitio web .
-            </p>
-            <p>Tecnologías Usadas: Figma, React JS, Tailwind CSS</p>
-            <button>Ver proyecto</button>
-          </div>
-          <img src="" alt="" />
-          <div>
-            <h2>Proyecto 2: To do list</h2>
-            <p>
-              Lista de tareas con un CRUD completo, permite crear, leer,
-              actualizar, borrar las tareas creadas y validación de campos
-              vacíos.
-            </p>
-            <p>Tecnologías Usadas: React JS, Tailwind CSS</p>
-            <button>Ver proyecto</button>
-          </div>
-          <img src="" alt="" />
+      <section class="proyectos">
+        <div class="proyectos__titulo"><h2>Proyectos</h2></div>
+        <img src="./assets/imagen-pixar.jpg" alt="" />
+        <div class="proyectos__item-uno">
+          <h2>Proyecto 1: Sitio web La Finca de Todos</h2>
+          <p>
+            Diseño completo de la interfaz gráfica y desarrollo front-end para
+            sitio web .
+          </p>
+          <p>Tecnologías Usadas: Figma, React JS, Tailwind CSS</p>
+          <button>Ver proyecto</button>
+        </div>
+        <img src="./assets/imagen-pixar.jpg" alt="" />
+        <div class="proyectos__item-dos">
+          <h2>Proyecto 2: To do list</h2>
+          <p>
+            Lista de tareas con un CRUD completo, permite crear, leer,
+            actualizar, borrar las tareas creadas y validación de campos vacíos.
+          </p>
+          <p>Tecnologías Usadas: React JS, Tailwind CSS</p>
+          <button>Ver proyecto</button>
         </div>
       </section>
       <section>
         <div>
-          <h2>Testimonios</h2>
+          <h2>Experiencia</h2>
           <p>Junio 2022 - Actualidad</p>
           <p>
             He trabajado con diversos clientes, creando experiencias digitales
             intuitivas y atractivas, desde el diseño de interfaz gráfica hasta
             el desarrollo front-end
           </p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h2>Testimonios</h2>
-          <p>Testimonio clienta</p>
-          <p>Nombre clienta</p>
         </div>
       </section>
       <section>
