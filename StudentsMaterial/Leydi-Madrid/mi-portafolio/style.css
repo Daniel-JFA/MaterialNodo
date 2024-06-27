@@ -1,4 +1,73 @@
 body {
-    width: 700px;
-    margin: auto;
+  margin: auto;
+  width: 1200px;
+}
+
+main {
+  margin: 20px 40px 40px;
+}
+
+.nav-contenido {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-contenido li {
+  display: inline-block;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner,
+.acerca,
+.proyectos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.banner__informacion,
+.acerca__informacion,
+.proyectos__item-uno,
+.proyectos__item-dos {
+  align-content: center;
+}
+
+.banner img {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+}
+
+.proyectos img {
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+.banner button {
+  padding: 16px;
+  border-radius: 50px;
+  border: 2px solid #0000;
+  background: linear-gradient(rgb(255, 255, 255), #d0d0d0) padding-box,
+  linear-gradient(rgb(128, 66, 222), rgb(168, 168, 168)) border-box;
+
+
+}
+
+.acerca div p {
+  width: 600px;
+}
+
+.proyectos__item-uno,
+.proyectos__item-dos {
+  width: 500px;
 }
