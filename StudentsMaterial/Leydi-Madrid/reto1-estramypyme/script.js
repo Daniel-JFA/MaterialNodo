@@ -28,11 +28,18 @@ function seleccionarOpcion(index) {
     indexPregunta++;
     if (indexPregunta >= basePreguntas.length) {
       indexPregunta = 0;
+      // Swal.fire({
+      //   title: "Haz terminado la primera sección 😁,",
+      //   width: 600,
+      //   padding: "3em",
+      //   color: "#000066",
+      // });
       Swal.fire({
-        title: "¡Perfecto! Haz terminado la primera sección 😁,",
-        width: 600,
-        padding: "3em",
-        color: "#000066",
+        position: "center",
+        icon: "success",
+        title: "Haz terminado la primera sección 😁",
+        showConfirmButton: false,
+        timer: 1500
       });
     }
 

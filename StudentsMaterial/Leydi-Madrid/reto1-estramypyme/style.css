@@ -89,10 +89,19 @@ footer {
 }
 
 .contenedor__seccion__preguntas__descripcion {
+  display: flex;
+  flex-direction: column;
   width: 97%;
   background-color: #ebebeb;
   padding: 1em;
   border-radius: 0.5em;
+}
+
+.contenedor__seccion__preguntas__descripcion h3 {
+  justify-content: center;
+  text-align: center;
+  font-weight:700;
+  margin: 0;
 }
 
 .imagen-circulo {

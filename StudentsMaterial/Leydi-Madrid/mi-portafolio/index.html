@@ -5,82 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Leydi Madrid</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <nav class="nav-contenido">
-        <ul>
-          <li>Inicio</li>
-          <li>Sobre mí</li>
-          <li>Portafolio</li>
-          <li>Experiencia</li>
-          <li>Testimonios</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
+      <header class="header-nav">
+        <div class="contenedor_nav">
+          <a href="#" class="logo">LeyDev</a>
+          <input type="checkbox" id="check" />
+          <label for="check" class="icons"
+            ><i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bxs-x-circle bx-rotate-90" id="close-icon"></i
+          ></label>
+          <nav class="nav-bar">
+            <ul>
+              <a href="#acerca">Sobre mí</a>
+              <a href="#proyectos">Proyectos</a>
+              <a href="#experiencia">Experiencia</a>
+              <a href="#">Contacto</a>
+            </ul>
+          </nav>
+        </div>
+      </header>
       <header>
         <section class="banner">
           <div class="banner__informacion">
-            <h2 class="banner__titulo-principal">Hola 🖖 Soy Leydi</h2>
-            <h1 class="banner__titulo-secundario">
-              Diseñadora UI & Desarrolladora Front-end
-            </h1>
-            <p class="banner__parrafo">
-              Transformo ideas en interfaces atractivas y funcionales,
-              combinando creatividad y tecnologías
-            </p>
-            <button>Ver mi trabajo</button>
+            <div class="contenedor__titulos">
+              <h2 class="banner__titulo__principal">¡Hola! 👋🏻 Soy Leydi</h2>
+              <h1 class="banner__titulo__secundario">
+                Diseñadora UI & Desarrolladora Front-end
+              </h1>
+            </div>
+            <div class="contenedor__media">
+              <a href="https://www.linkedin.com/in/leydimadrid/" target="_blank"
+                ><img
+                  src="./assets/linkedin.svg"
+                  alt="Icono LinkedIn"
+                />LinkedIn</a
+              >
+              <a href="https://github.com/leydimadrid" target="_blank">
+                <img src="./assets/github.svg" alt="Icono GitHub" />GitHub</a
+              >
+              <a href="https://www.behance.net/LeydiMadrid" target="_blank">
+                <img src="./assets/behance.svg" alt="Icono Behance" />Behance</a
+              >
+            </div>
           </div>
-          <img src="./assets/imagen-pixar.jpg" alt="" />
+          <img class="imagen-pixar" src="./assets/imagen-pixar.jpg" alt="" />
         </section>
       </header>
-      <section class="acerca">
+      <section class="acerca" id="acerca">
         <div class="acerca__informacion">
+          <h2>Sobre mí</h2>
           <p>
             ¡Hola! Soy Leydi Madrid, una apasionada Diseñadora UI y
-            Desarrolladora Front-end. Durante los últimos 2 años he tenido el
-            privilegio de sumergirme en este maravilloso mundo. Me especializo
-            en crear experiencias de usuario intuitivas y visualmente
-            atractivas, utilizando tecnologías front-end. Combino mi amor por el
-            diseño con habilidades técnicas para construir sitios web y
-            aplicaciones que no solo se ven bien sino que también funcionan de
-            manera eficiente.
+            Desarrolladora Front-end. Soy una mujer autodidacta y durante los
+            últimos 2 años he tenido el privilegio de sumergirme en este
+            maravilloso mundo. Me especializo en crear experiencias de usuario
+            intuitivas y visualmente atractivas.
           </p>
         </div>
-        <div>
-          <h2>Habilidades técnicas</h2>
-          <ul>
-            <li>Diseño UI: Figma, Prototipado, Diseño responsivo</li>
-            <li>Frontend: HTML5, CSS3, JavaScript, React JS, Tailwind CSS</li>
-          </ul>
+        <div class="contenedor__habilidades">
+          <div><h2>Habilidades técnicas</h2></div>
+          <div class="contenedor__herramientas">
+            <div class="herramientas">
+              <i class="bx bxl-figma" style="color: #ffd700"></i>Figma
+            </div>
+            <div class="herramientas">
+              <i class="bx bxl-tailwind-css" style="color: #ffd700"></i>HTML5
+            </div>
+            <div class="herramientas">
+              <i class="bx bxl-javascript" style="color: #ffd700"></i>JavaScript
+            </div>
+            <div class="herramientas">
+              <i class="bx bxl-css3" style="color: #ffd700"></i>CSS
+            </div>
+            <div class="herramientas">
+              <i class="bx bxl-tailwind-css" style="color: #ffd700"></i>Tailwind
+              CSS
+            </div>
+            <div class="herramientas">
+              <i class="bx bxl-react" style="color: #ffd700"></i>React JS
+            </div>
+          </div>
         </div>
       </section>
-      <section class="proyectos">
+      <section class="contenedor__proyectos">
         <div class="proyectos__titulo"><h2>Proyectos</h2></div>
-        <img src="./assets/imagen-pixar.jpg" alt="" />
-        <div class="proyectos__item-uno">
-          <h2>Proyecto 1: Sitio web La Finca de Todos</h2>
-          <p>
-            Diseño completo de la interfaz gráfica y desarrollo front-end para
-            sitio web .
-          </p>
-          <p>Tecnologías Usadas: Figma, React JS, Tailwind CSS</p>
-          <button>Ver proyecto</button>
-        </div>
-        <img src="./assets/imagen-pixar.jpg" alt="" />
-        <div class="proyectos__item-dos">
-          <h2>Proyecto 2: To do list</h2>
-          <p>
-            Lista de tareas con un CRUD completo, permite crear, leer,
-            actualizar, borrar las tareas creadas y validación de campos vacíos.
-          </p>
-          <p>Tecnologías Usadas: React JS, Tailwind CSS</p>
-          <button>Ver proyecto</button>
+        <div class="proyectos" id="proyectos">
+          <div class="contenedor__item__proyecto">
+            <img
+              src="./assets/lfdt.jpg"
+              alt="Sitio web Fundación La Finca de Todos"
+            />
+            <div class="informacion_proyecto">
+              <h2>Sitio web La Finca de Todos</h2>
+              <p>
+                Diseño completo de la interfaz gráfica y desarrollo front-end
+                para La Fundación La Finca de Todos
+              </p>
+              <div class="contenedor__tecnologias">
+                <a href=""> <i class="bx bxl-react"></i>React JS</a>
+                <a href=""><i class="bx bxl-tailwind-css"></i>Tailwind css</a>
+              </div>
+            </div>
+            <div class="contenedor__boton">
+              <a
+                href="https://github.com/leydimadrid/sitio-web-la-finca-de-todos"
+                target="_blank"
+                class="ver-proyecto"
+              >
+                <img src="./assets/github.svg" alt="Icono GitHub" />GitHub</a
+              >
+              <a
+                class="ver-proyecto"
+                href="https://www.lafincadetodos.com/#/inicio"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
+          <div class="contenedor__item__proyecto">
+            <img src="./assets/todolist.jpg" alt="To do List" />
+            <div class="informacion_proyecto">
+              <h2>To do list</h2>
+              <p>
+                Lista de tareas con un CRUD completo, crear, leer, actualizar,
+                borrar y validación de campos vacíos.
+              </p>
+              <div class="contenedor__tecnologias">
+                <a href="#"> <i class="bx bxl-react"></i>React JS</a>
+                <a href="#"><i class="bx bxl-tailwind-css"></i>Tailwind css</a>
+              </div>
+            </div>
+            <div class="contenedor__boton">
+              <a
+                href="https://github.com/leydimadrid/aplicacion-todo"
+                target="_blank"
+                class="ver-proyecto"
+              >
+                <img src="./assets/github.svg" alt="Icono GitHub" />GitHub</a
+              >
+              <a
+                class="ver-proyecto"
+                href="https://listadetareas-crud.netlify.app/"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </div>
         </div>
       </section>
-      <section>
+      <section id="experiencia">
         <div>
-          <h2>Experiencia</h2>
+          <h2>Experiencia laboral</h2>
           <p>Junio 2022 - Actualidad</p>
           <p>
             He trabajado con diversos clientes, creando experiencias digitales
@@ -89,34 +170,8 @@
           </p>
         </div>
       </section>
-      <section>
-        <div>
-          <p>
-            ¡Me encantaría escuchar sobre tu próximo proyecto o responder
-            cualquier pregunta que tengas!
-          </p>
-        </div>
-        <div>
-          <form>
-            <label for="name">Nombre</label>
-            <input type="text" name="nombre" placeholder="Escribe tu nombre" />
-            <label for="mensaje">Mensaje</label>
-            <input
-              type="text"
-              name="mensaje"
-              placeholder="Escribe tu mensaje"
-            />
-            <button>Enviar mensaje</button>
-          </form>
-        </div>
-        <div>
-          <a href="">Correo electrónico</a>
-          <a href="">LinkedIn</a>
-          <a href="">GitHub</a>
-          <a href="">Behance</a>
-        </div>
-      </section>
-      <footer>© 2024 Leydi Madrid. Todos los derechos reservados.</footer>
+      <section></section>
+      <footer>© 2024 Leydi Madrid, Desarrollado con 💜</footer>
       <script src="index.js"></script>
     </main>
   </body>
