@@ -9,27 +9,6 @@
 // Ejercicio 3: FizzBuzz
 // Descripción: Escribe una función que recorra los números del 1 al 100. Para cada número, imprime "Fizz" si es divisible por 3, "Buzz" si es divisible por 5, y "FizzBuzz" si es divisible por ambos.
 
-function multiplo(){
-    for (i =1; i<=100; i++){
-        if(i%3===0 && i%5===0){
-            console.log(`i = ${i} FizzBuzz`)
-
-        }else if(i%3===0){
-            console.log(`i = ${i} Fizz`);
-
-        }else if(i%5===0){
-            console.log(`i = ${i} Buzz`)
-
-        }else{
-            console.log(`i = ${i} El numero es divible por un numero diferente`)
-        }
-    }
-}
-
-multiplo();
-    
-
-
 // Ejercicio 4: Factorial de un Número
 // Descripción: Escribe una función que tome un número como argumento y devuelva su factorial.
 
@@ -50,4 +29,3 @@ multiplo();
 
 // Ejercicio 10: Generar una Secuencia Fibonacci
 // Descripción: Escribe una función que genere una secuencia Fibonacci hasta un número dado.
-
