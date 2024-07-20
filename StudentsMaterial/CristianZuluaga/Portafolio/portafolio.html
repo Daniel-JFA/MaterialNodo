@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio sin CSS</title>
+        <link rel="stylesheet" href="portafolio.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>Mi portafolio personal</h1>
+            <div class="containerImg">
+                <img src="img/FotoAvatar.jpg" />
+            </div>          
+            <nav>
+                <ul>
+                    <li><a href="#about"> Sobre mi</a></li>
+                    <li><a href="#projects"> Mis proyectos</a></li>
+                    <li><a href="#skills"> Habilidades</a></li>
+                    <li><a href="#contact"> Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <h1>Bienvenido a mi portafolio</h1>
+            <p> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Doloribus dolores soluta error ex ut molestiae magnam omnis, 
+                molestias optio rem aspernatur? 
+                Sequi rem soluta odit voluptatibus nobis laudantium totam modi!
+            </p>
+        </section>
+        <div class="container">
+            <section class="section" id="projects">
+                <div class="project">
+                    <h3> Proyecto x </h3>
+                    <p> Descripcion del proyecto </p>
+                </div>
+                <div class="project">
+                    <h3> Proyecto x </h3>
+                    <p> Descripcion del proyecto </p>
+                </div>
+                <div class="project">
+                    <h3> Proyecto x </h3>
+                    <p> Descripcion del proyecto </p>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <img src="img/hml.jpg" alt="HTML" />
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/css.jpg" alt="CSS" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/js.jpg" alt="JavaScript" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/nodejs.jpg" alt="Node.JS" />
+                        <span>Node.JS</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/angular.jpg" alt="Angular" />
+                        <span>Angular</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/typescript.jpg" alt="TypeScript" />
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+            </section>
+            
+
+
+            </section>
+            <section id="contact">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows ="5" required></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>
+                &copy; Cristian Zuluaga. Todos los derechos reservados, test clase https://github.com/Cristian-Zuluaga
+            </p>
+        </footer>
+    </body>
+</html>
