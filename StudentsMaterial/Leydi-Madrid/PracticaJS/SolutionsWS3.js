@@ -1,5 +1,4 @@
 // Taller de Programación en JavaScript
-
 // Este taller está diseñado para ayudarte a practicar y reforzar tu comprensión de las estructuras de control en JavaScript.
 // Los ejercicios están divididos en diferentes niveles de dificultad y cada conjunto se enfoca en una estructura de control específica:
 // `if`, `for`, `while`, y `switch`.
