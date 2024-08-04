@@ -200,15 +200,26 @@ console.log("----------------------------------------------------");
 // Ejercicio 9: Encontrar Números Primos
 // Descripción: Escribe una función que encuentre todos los números primos hasta un número dado.
 
-// function numPrimo(numero) {
-//   let contador = 0;
-//   if (numero <= 0) return false;
-//   for (let i = 1; i <= numero; i++) {
-//     if (numero % i === 0) contador++;
-//   }
-// }
+function numPrimo(numero) {
+  if (numero <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) return "No es primo";
+  }
+  return "Es primo";
+}
 
-// console.log(numPrimo(100));
+console.log(numPrimo(19));
+console.log("----------------------------------------------------");
 
 // Ejercicio 10: Generar una Secuencia Fibonacci
 // Descripción: Escribe una función que genere una secuencia Fibonacci hasta un número dado.
+
+function secuenciaFibonacci(limite) {
+  let secuencia = [0, 1];
+  for (let i = 2; i < limite; i++) {
+    secuencia.push(secuencia[i - 1] + secuencia[i - 2]);
+  }
+  return secuencia;
+}
+
+console.log(secuenciaFibonacci(10));
