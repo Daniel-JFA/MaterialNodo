@@ -4,14 +4,35 @@
 // `if`, `for`, `while`, y `switch`.
 // Este taller te proporcionará una práctica variada y profunda en el uso de estructuras de control en JavaScript.
 // Trabaja a través de cada conjunto de ejercicios y asegúrate de entender cómo funcionan y cuándo usar cada estructura. ¡Buena suerte!
-//Voy a empezar a realizar este ejercicio (Esto es un ensayo)
+
 // Ejercicios con `if`
 
 // 1. Ejercicio 1: Número Positivo, Negativo o Cero
 //    - Descripción: Escribe un programa que lea un número del usuario y determine si es positivo, negativo o cero.
+let prompt = require("prompt-sync")({ sigint: true });
+let inputNumero = prompt("Ingresa un número: ")
+if (inputNumero > 0) {
+  console.log("El número es positivo");
+} else if (inputNumero < 0) {
+  console.log("El numero es negativo");
+} else {
+  console.log("El número es cero");
+}
 
 // 2. Ejercicio 2: Edad para Votar
 //    - Descripción: Escribe un programa que lea la edad de una persona y determine si es elegible para votar (mayor o igual a 18 años).
+
+let inputVotar = prompt("¿Cuás es tu edad? ")
+let edadMinima = 18;
+
+if (inputVotar >= edadMinima) console.log(`La persona tiene ${inputVotar} años, puede votar 😁`);
+else {
+  const añosQueFaltan = edadMinima - inputVotar;
+  console.log(
+    `La persona tiene ${inputVotar} y no puede votar, le faltan ${añosQueFaltan} años`
+  );
+}
+
 
 // 3. Ejercicio 3: Determinar el Mayor de Tres Números
 //    - Descripción: Escribe un programa que lea tres números del usuario y determine cuál es el mayor.
@@ -43,8 +64,7 @@
 // 1. Ejercicio 1: Determinar el Día de la Semana
 //    - Descripción: Escribe un programa que lea un número del 1 al 7 y use una declaración `switch` para determinar el día de la semana correspondiente.
 
-let prompt = require("prompt-sync")({ sigint: true });
-let inputOpcion = parseInt(prompt("Ingrese un número: "));
+let inputOpcion = parseInt(prompt("Ingrese un número que corresponda a un día de la semana: "));
 
 switch (inputOpcion) {
   case 1:
@@ -86,7 +106,6 @@ const fullname = "Leydi Madrid";
 const age = 26;
 const address = { street: "Calle 58", city: "Medellín", country: "Colombia" };
 const hobbies = ["Aprender", "Código", "Ver películas de acción"];
-const hobbiesSeparados = hobbies.split(' ')
 const Biography = `Hola mi nombre es ${fullname}, tengo ${age} años y vivo en ${address.street}, ${address.city}, ${address.country}, estoy aprendiendo desarrollo web, tengo una cuenta en GitHub mi nombre de usuario es ${user}, miss hobbies favoritos son ${hobbies}`;
 
 console.log(Biography);
