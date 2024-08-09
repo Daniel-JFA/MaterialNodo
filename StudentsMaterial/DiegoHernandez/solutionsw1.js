@@ -232,3 +232,30 @@ for(let j =0;j<n;j++){
    }
 }
 }
+
+//Ejercicios de Vectores con Funciones
+let numbers2 = [1, 2, 3, 4, 5];
+/* 1. Ejercicio 1: Sumar Elementos de un Vector
+   - Descripción: Escribe una función que sume todos los elementos de un vector y devuelva el resultado.
+2. Ejercicio 2: Encontrar el Máximo de un Vector
+   - Descripción: Escribe una función que encuentre el valor máximo en un vector.
+3. Ejercicio 3: Invertir un Vector
+   - Descripción: Escribe una función que invierta el orden de los elementos de un vector y devuelva el vector invertido.
+
+Solucion..... */
+// Ejercicio 1: 
+function sumarElementos(vector) {
+   return vector.reduce((acumulador, valorActual) => acumulador + valorActual, 0);
+}
+console.log("la suma de los elmentos",sumarElementos(numbers2));
+//ejercicio 2
+function encontrarMaximo(vector) {
+   return Math.max(...vector);
+}
+
+console.log("El numero maximo es: ",encontrarMaximo(numbers2));
+// ejercicio 3
+function invertirVector(vector) {
+   return vector.slice().reverse();
+}
+console.log("El vector invertido es: ",invertirVector(numbers2));
