@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #58b0a8;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin: 5px 0;
+}
+
+#contact a {
+  color: #58b0a8;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #58b0a8;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.skill-item img {
+  width: 40px;
+  height: 40px;
+}
+#contact img {
+  width: 24px;
+  height: 24px;
+}
