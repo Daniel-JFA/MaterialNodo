@@ -105,26 +105,95 @@ console.log(haveAge);
 // 8. `find()`
 // Devuelve el primer elemento del array que satisface la prueba implementada por la función proporcionada.
 
+let animales = ["Perro", "Gato", "Lobo", "Tigre"];
+animales.find((animal) => {
+  if (animal == "Gato") {
+    console.log(`Soy el animal ${animal}`);
+  } else {
+    console.log(`No soy el animal ${animal}`);
+  }
+});
+
+console.log("----------------------");
+
 // 9. `findIndex()`
 // Devuelve el índice del primer elemento del array que satisface la prueba implementada por la función proporcionada. Si no se encuentra, devuelve -1.
+
+let nombres = ["Patricia", "Juan", "Roberto", "Samu"];
+let resultado = nombres.findIndex((nombre) => nombre.length == 4);
+console.log(resultado);
+
+console.log("----------------------");
 
 // 10. `keys()`
 // Devuelve un nuevo objeto Array Iterator que contiene las claves para cada índice en el array.
 
+let users1 = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "John", age: 35 },
+  { name: "Jane", age: 20 },
+];
+
+let nuevoObjetoArrayKeys = users1.keys();
+let nuevoObjetoArrayValues = users1.values();
+
+for (const key of nuevoObjetoArrayKeys) {
+  console.log(`Soy la key:  ${key}`);
+}
+
+console.log("----------------------");
+
 // 11. `values()`
 // Devuelve un nuevo objeto Array Iterator que contiene los valores para cada índice en el array.
 
+for (const value of nuevoObjetoArrayValues) {
+  console.log(`Soy ${value.name} y tengo ${value.age} años `);
+}
+console.log("----------------------");
+
 // 12. `entries()`
 // Devuelve un nuevo objeto Array Iterator que contiene pares clave/valor para cada índice en el array.
+let nuevoObjetoArrayEntries = users1.entries();
+
+for (const [key, value] of nuevoObjetoArrayEntries) {
+  console.log(`Soy el ${key}: ${value.name} ${value.age}`);
+}
+console.log("----------------------");
 
 // 13. `for...of`
 // Un bucle que permite recorrer los elementos de un array (y otros objetos iterables).
 
+let colores = ["Azul", "Rojo", "Verde", "Morado"];
+for (const color of colores) {
+  console.log(`Soy el color: ${color}`);
+  if (color == "Morado") {
+    console.log(`El color ${color} es mi favorito 💜`);
+  }
+}
+console.log("----------------------");
+
 // 14. `for...in`
 // Un bucle que permite recorrer las claves (índices) de un array (aunque es más adecuado para objetos).
 
+let animal = { name: "Manchas", age: 5 };
+
+for (const key in animal) {
+  console.log(`${key}: ${animal[key]}`);
+}
+console.log("----------------------");
+
 // 15. `flat()`
 // Devuelve un nuevo array con todos los elementos de sub-array concatenados en él de forma recursiva hasta la profundidad especificada.
+
+let apellidos = [
+  ["Perez", "Vásquez"],
+  ["Madrid", "Suarez"],
+  ["Rodríguez", "Manco"],
+];
+
+let apellidosConcatenados = apellidos.flat();
+console.log(apellidosConcatenados);
 
 // Estas funciones permiten realizar diversas operaciones en los arrays,
 // desde recorrerlos y aplicar funciones a cada elemento, hasta transformarlos y filtrarlos según diferentes criterios.
