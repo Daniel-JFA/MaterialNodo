@@ -1,0 +1,74 @@
+<app-header></app-header>
+<main>
+  <header>
+    <section class="banner">
+      <div class="banner__informacion">
+        <div class="contenedor__titulos">
+          <h2 class="banner__titulo__principal">¡Hola! 👋🏻 Soy Leydi</h2>
+          <h1 class="banner__titulo__secundario">
+            Diseñadora UI & Desarrolladora Front-end
+          </h1>
+        </div>
+        <div class="contenedor__redes">
+          <a href="https://www.linkedin.com/in/leydimadrid/" target="_blank"
+            ><img
+              src="../../../assets/linkedin.svg"
+              alt="Icono LinkedIn"
+            />LinkedIn</a
+          >
+          <a href="https://github.com/leydimadrid" target="_blank">
+            <img src="../../../assets/github.svg" alt="Icono GitHub" />GitHub</a
+          >
+          <a href="https://www.behance.net/LeydiMadrid" target="_blank">
+            <img
+              src="../../../assets/behance.svg"
+              alt="Icono Behance"
+            />Behance</a
+          >
+        </div>
+      </div>
+      <img
+        class="imagen-pixar"
+        src="../../../assets/imagen-pixar.jpg"
+        alt="Imagen pixar mujer Developer"
+      />
+    </section>
+  </header>
+  <section class="acerca" id="acerca">
+    <div class="acerca__informacion">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy Leydi Madrid, una apasionada Diseñadora UI y Desarrolladora
+        Front-end. Soy una mujer autodidacta y durante los últimos 2 años he
+        tenido el privilegio de sumergirme en este maravilloso mundo, me encanta
+        estar en constante aprendizaje. Me especializo en crear experiencias de
+        usuario intuitivas y visualmente atractivas.
+      </p>
+    </div>
+    <div class="contenedor__habilidades">
+      <div><h2>Stack de desarrollo</h2></div>
+      <div class="contenedor__stack">
+        <div
+          *ngFor="let stack of stackDesarrolloService.stackDesarrollo"
+          class="stack"
+        >
+          <i [class]="stack.icono"> </i>
+          <p>{{ stack.nombre }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-card-proyecto></app-card-proyecto>
+  <section id="experiencia">
+    <div>
+      <h2>Experiencia laboral</h2>
+      <p>Junio 2022 - Actualidad</p>
+      <p>
+        He trabajado con diversos clientes, creando experiencias digitales
+        intuitivas y atractivas, desde el diseño de interfaz gráfica hasta el
+        desarrollo front-end
+      </p>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

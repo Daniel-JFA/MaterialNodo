@@ -29,3 +29,5 @@ function determineDay() {
   }
   document.getElementById("selected-day").innerText = result;
 }
+
+

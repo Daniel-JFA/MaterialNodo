@@ -1,0 +1,29 @@
+<section class="contenedor__proyectos">
+  <div class="proyectos__titulo"><h2>Proyectos</h2></div>
+  <div class="proyectos" id="proyectos">
+    <div
+      *ngFor="let proyecto of ProyectoService.datosProyecto"
+      class="contenedor__item__proyecto"
+    >
+      <img [src]="proyecto.img" [alt]="proyecto.titulo" />
+      <div class="informacion_proyecto">
+        <h2>{{ proyecto.titulo }}</h2>
+
+        <p>{{ proyecto.descripcion }}</p>
+        <div class="contenedor__tecnologias">
+          <a *ngFor="let tecnologia of proyecto.tecnologias" href="#">
+            <i [class]="tecnologia.icono"></i> {{ tecnologia.nombre }}
+          </a>
+      </div>
+      </div>
+      <div class="contenedor__boton">
+        <a [href]="proyecto.github" target="_blank" class="ver-proyecto">
+          <img src="../../../assets/github.svg" alt="Icono GitHub" />GitHub</a
+        >
+        <a class="ver-proyecto" [href]="proyecto.url" target="_blank"
+          >Ver proyecto</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
