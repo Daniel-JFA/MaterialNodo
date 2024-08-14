@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(90deg rbg(244, 244, 245), rbg(218, 217, 217));
+}
+
+.menu {
+  background: linear-gradient(90deg rbg(244, 244, 245), rbg(218, 217, 217));
+  width: 100%;
+  height: 10vh;
+  padding: 0 5%;
+}
+
+.seccion-uno {
+  width: 100%;
+  min-height: 90vh;
+  padding: 0 5%;
+}
+
+.seccion-uno .img,
+.seccion-tres .img {
+  width: 280px;
+  height: 210px;
+}
+
+.seccion-uno button {
+  width: 100px;
+}
+
+.seccion-tres .parrafo {
+  width: 500 px;
+}
