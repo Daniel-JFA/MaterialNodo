@@ -1,0 +1,105 @@
+#titulo {
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    background: linear-gradient( #cd6187, #d8d0d0);
+    opacity: 0.9;
+    border-color: rgb(25, 37, 26);
+    border-style:outset;
+    border-style: solid;
+    border-radius: 3%;
+    font-size: 40px;
+    
+    
+      
+}
+
+.foto-titulo {
+    border-style:outset;
+    border-color: rgb(65, 38, 49);
+    border-radius: 3%;
+}
+
+.informacion {
+    text-shadow: rgb(83, 233, 56) 1px 0 6px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    color:rgb(23, 30, 23);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+          
+}
+
+
+#descripcion {
+    display: flex;    
+    font-family:serif;
+    font-size: 20px;
+    background-image: url('img/pc.png');
+    background-size:cover;
+    opacity: 0.9;
+    border-radius: 6%;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.centro {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#572738, #f2d4d4);
+    margin-top: 6%;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding: 3%;
+    text-align: justify;
+    color: rgb(36, 47, 38);
+    font-family: Times;
+    font-size: 30px;
+    text-shadow: 
+    1px 1px 0 rgb(213, 237, 213),
+    1px -1px 0 rgb(213, 237, 213),
+    -1px 1px 0 rgb(213, 237, 213),
+    -1px -1px 0 rgb(213, 237, 213);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.estudios {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 21px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: rgb(22, 27, 21);
+    border-radius: 3%;
+    
+}
+
+.conocimiento {
+    color: rgb(244, 191, 191);
+    font-family: sans-serif;
+    margin: 30px;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 
+    1px 1px 0 rgb(35, 71, 35),
+    1px -1px 0 rgb(35, 71, 35),
+    -1px 1px 0 rgb(35, 71, 35),
+    -1px -1px 0 rgb(35, 71, 35);
+    
+}
