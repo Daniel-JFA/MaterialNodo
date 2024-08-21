@@ -1,0 +1,89 @@
+
+     
+
+.container{
+    background-color: khaki;
+    padding: spx;
+    border: 1px solid black;
+    display: flex;
+}
+.box{
+    border: 3px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+}
+.wrapper {
+    width: 100vw;
+    height: 200vh;
+    background-color: #191c32;
+    color: #fff;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.brand {
+    margin-top: -7px;
+}
+}
+.brand span {
+    color: aqua;
+}
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li {
+    list-style:none;
+}
+.menu a {
+color:  #fff;
+text-decoration:none;
+padding: 10px 20px;
+}
+.menu .active {
+    color: aqua;
+}
+.menu a:hover {
+    background-color: aqua;
+    color: #191c32;
+    transition: ease-in .4s;
+}
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1 {
+    font-size: 3em;
+}
+span {
+    color: aqua;
+}
+.download-cv {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 69);
+
+}
+   .download-cv:hover {
+    background-color: #fff;
+    box-shadow: none;
+   }
+   .main img{
+    border: 7px solid aqua;
+
+    z-index: 1;
+   }
+   
+   
